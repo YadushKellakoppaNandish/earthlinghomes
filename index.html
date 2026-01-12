@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Earthling Homes – Earth-Friendly Architecture & Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Earthling Homes blends sustainable architecture, interior design, and urban planning to create earth-friendly homes that feel calm, natural, and timeless." />
+  
+  <link rel="canonical" href="https://earthlinghomes.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Earthling Homes" />
+  <meta property="og:title" content="Earthling Homes – Earth-Friendly Architecture & Interiors" />
+  <meta property="og:description" content="Earthling Homes blends sustainable architecture, landscape design, and mindful interiors — for calm, buildable spaces rooted in nature." />
+  <meta property="og:url" content="https://earthlinghomes.in/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+<style>
+    :root {
+      --page-bg: #d2c4b6;
+      --shell-bg: #f8f3ec;
+      --shell-border: #e3d6c7;
+      --accent: #c59a6b;
+      --accent-soft: #e0b88a;
+      --text-main: #3b322a;
+      --text-soft: #716457;
+      --card-bg: #ffffff;
+      --border-soft: #efe2d5;
+      --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.22);
+      --radius-xl: 30px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #e0d3c5 0, #c4b29e 40%, #b6a38f 100%);
+      color: var(--text-main);
+      padding: 32px 12px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* MAIN SHELL */
+    .page-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      background: var(--shell-bg);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--shell-border);
+      overflow: visible;
+    }
+
+    header {
+      position: relative;
+      z-index: 5;
+      background: transparent;
+    }
+
+    .nav-wrap {
+      padding: 18px 26px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    /* LOGO */
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      align-items: flex-start;
+    }
+
+    .logo-main {
+      font-family: "Segoe Script", "Lucida Handwriting", "Bradley Hand", cursive;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #3a3026;
+      white-space: nowrap;
+    }
+
+    .logo-tagline {
+      font-size: 10px;
+      color: #8a7a69;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 13px;
+    }
+
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #7b6c5e;
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 3px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.25s ease;
+    }
+
+    nav a:hover {
+      color: #2c241d;
+      background: rgba(197, 154, 107, 0.08);
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-cta {
+      padding: 7px 16px;
+      background: linear-gradient(135deg, #c99a6c, #e1b583);
+      color: #2b2117;
+      font-weight: 600;
+      border-radius: 999px;
+      box-shadow: 0 8px 22px rgba(201, 154, 108, 0.45);
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      background: linear-gradient(135deg, #e9c091, #f1cda4);
+      color: #1e140c;
+    }
+
+/* NAV DROPDOWN */
+.nav-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #7b6c5e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: 0.25s ease;
+  background: transparent;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #2c241d;
+  background: rgba(197, 154, 107, 0.08);
+}
+
+.caret {
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 220px;
+  background: #fffaf3;
+  border: 1px solid #e3d6c7;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  padding: 8px;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #645646;
+  font-size: 13px;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(197, 154, 107, 0.12);
+  color: #2c241d;
+}
+
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+    main {
+      padding: 0 26px 26px;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 8px;
+      margin-bottom: 40px;
+    }
+
+    .hero-inner {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: #000;
+      min-height: 320px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
+    }
+
+    @media (max-width: 780px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: 0;
+      }
+    }
+
+    .hero-media {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.82);
+    }
+
+    .hero-overlay {
+      padding: 34px 30px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, rgba(0,0,0,0.25), rgba(0,0,0,0.65));
+      color: #f8f3ec;
+    }
+
+    @media (max-width: 780px) {
+      .hero-overlay {
+        padding: 22px 18px 24px;
+        order: -1;
+      }
+    }
+
+    .hero-copy {
+      max-width: 420px;
+    }
+
+    .hero-copy-eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: #f1e3cf;
+      margin-bottom: 10px;
+      opacity: 0.95;
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 3.4vw, 36px);
+      line-height: 1.15;
+      margin: 0 0 10px;
+    }
+
+    .hero-title span {
+      color: #f7d9a7;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #efe3d3;
+      margin-bottom: 20px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 225, 200, 0.7);
+      color: #fce9c9;
+      background: rgba(39, 29, 22, 0.7);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2b2117;
+      background: linear-gradient(135deg, #f0c48c, #e5b175);
+      box-shadow: 0 12px 30px rgba(206, 158, 101, 0.65);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ffd09d, #f3bd7b);
+    }
+
+    .btn-ghost {
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 225, 200, 0.9);
+      cursor: pointer;
+      font-size: 13px;
+      background: rgba(39, 29, 22, 0.4);
+      color: #f7e6cf;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(244, 225, 200, 0.16);
+    }
+
+    .hero-note {
+      font-size: 11px;
+      color: #f3e1c9;
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+
+    .hero-visual-chip {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(36, 27, 21, 0.7);
+      color: #f9e7d0;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid rgba(244, 225, 200, 0.6);
+    }
+
+    /* SECTION BASE */
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: #a18669;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin: 0 0 8px;
+      color: var(--text-main);
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 18px;
+      max-width: 520px;
+    }
+
+    /* SERVICES */
+    #services {
+      margin-top: 34px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .service-card {
+      background: #f5ede3;
+      border-radius: var(--radius-md);
+      padding: 16px 16px 12px;
+      border: 1px solid var(--border-soft);
+      position: relative;
+      overflow: hidden;
+      transition: 0.26s ease;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(255, 255, 255, 0.45), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.26s ease;
+      pointer-events: none;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+      border-color: #e1c9aa;
+      background: #fdf5eb;
+    }
+
+    .service-card.expanded {
+      box-shadow: 0 16px 34px rgba(0,0,0,0.16);
+      border-color: #e1c9aa;
+      background: #fdf5eb;
+    }
+
+    .service-card:hover::before,
+    .service-card.expanded::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .service-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #3b3126;
+    }
+
+    .service-copy {
+      font-size: 13px;
+      color: var(--text-soft);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .service-details {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .service-card.expanded .service-details {
+      max-height: 260px;
+      opacity: 1;
+      padding-top: 6px;
+      margin-top: 4px;
+    }
+
+    .service-details ul {
+      padding-left: 16px;
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    .service-details li {
+      margin-bottom: 4px;
+    }
+
+    /* BLOG SECTION */
+    #blog {
+      margin-top: 36px;
+    }
+
+    .blog-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.7fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 880px) {
+      .blog-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .blog-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      border-color: #e1c9aa;
+    }
+
+    .blog-card-img {
+      position: relative;
+      overflow: hidden;
+      max-height: 220px;
+    }
+
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-card:hover .blog-card-img img {
+      transform: scale(1.04);
+    }
+
+    .blog-card-body {
+      padding: 16px 16px 18px;
+    }
+
+    .blog-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #a38462;
+      margin-bottom: 6px;
+    }
+
+    .blog-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .blog-excerpt {
+      font-size: 13px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .blog-meta {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #9a846c;
+    }
+
+    .blog-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .blog-list-card {
+      display: grid;
+      grid-template-columns: 110px minmax(0, 1fr);
+      gap: 12px;
+      padding: 10px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-soft);
+      background: #f7efe4;
+      cursor: pointer;
+      transition: 0.24s ease;
+    }
+
+    .blog-list-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      border-color: #e1c9aa;
+    }
+
+    .blog-list-card img {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .blog-list-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--text-main);
+    }
+
+    .blog-list-excerpt {
+      font-size: 12px;
+      color: var(--text-soft);
+      line-height: 1.4;
+    }
+
+    /* FOUNDERS */
+    .founders-words {
+      margin-top: 36px;
+      padding: 22px 20px 18px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: linear-gradient(135deg, #f4ebdf, #f7efe4);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    .founders-quote {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-soft);
+      margin-bottom: 10px;
+    }
+
+    .founders-meta {
+      font-size: 12px;
+      color: #8b7359;
+      opacity: 0.95;
+    }
+
+    /* LOCATION */
+    #location {
+      margin-top: 36px;
+    }
+
+    .map-container {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border-soft);
+      background: #f3e7d8;
+    }
+
+    .map-header {
+      padding: 10px 14px;
+      font-size: 13px;
+      background: #f1e2d1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #745f48;
+    }
+
+    .map-eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.9;
+    }
+
+    .map-label {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      display: block;
+    }
+
+    /* CONTACT */
+    #contact {
+      margin-top: 34px;
+      padding-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 10px;
+      padding: 14px 26px 18px;
+      border-top: 1px solid #e1d2c1;
+      background: transparent;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #857463;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #8b7359;
+      opacity: 0.85;
+      transition: 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+    }
+
+    /* MODAL */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 16px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #f8f3ec;
+      border-radius: 18px;
+      max-width: 420px;
+      width: 100%;
+      padding: 18px 18px 16px;
+      box-shadow: 0 18px 42px rgba(0,0,0,0.35);
+      border: 1px solid #e3d6c7;
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #3b322a;
+    }
+
+    .modal-close {
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      cursor: pointer;
+      color: #7b6c5e;
+    }
+
+    .modal-subtitle {
+      font-size: 13px;
+      color: #716457;
+      margin-bottom: 12px;
+    }
+
+    .modal-form {
+      display: grid;
+      gap: 9px;
+    }
+
+    .modal-form .field {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .modal-form label {
+      font-size: 11px;
+      color: #8b7359;
+    }
+
+    .modal-form input,
+    .modal-form textarea {
+      padding: 8px 9px;
+      border-radius: 999px;
+      border: 1px solid #e1d2c1;
+      background: #fdf8f1;
+      color: #3b322a;
+      font-size: 13px;
+      outline: none;
+      transition: 0.22s ease;
+      font-family: inherit;
+    }
+
+    .modal-form textarea {
+      border-radius: 12px;
+      min-height: 70px;
+      resize: vertical;
+    }
+
+    .modal-form input:focus,
+    .modal-form textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(197, 154, 107, 0.5);
+      background: #fffaf3;
+    }
+
+    .modal-actions {
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .modal-note {
+      font-size: 10px;
+      color: #9a846c;
+      flex: 1;
+    }
+
+    .btn-secondary {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid #e1d2c1;
+      background: #f4ebdf;
+      font-size: 12px;
+      cursor: pointer;
+      color: #3b322a;
+    }
+
+    .btn-secondary:hover {
+      background: #f0e5d5;
+    }
+
+    @media (max-width: 720px) {
+      .nav-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  
+    /* Portfolio CTA */
+    .portfolio-cta{
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 26px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px){
+      .portfolio-cta{ grid-template-columns: 1.25fr 1fr; align-items: stretch; }
+    }
+    .portfolio-cta .btn{
+      padding: 14px 16px;
+      border-radius: 18px;
+      justify-content: flex-start;
+      text-align: left;
+      line-height: 1.25;
+      border: 1px solid rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(6px);
+    }
+    .portfolio-cta .btn.btn-primary{
+      border: 1px solid rgba(206, 158, 101, 0.35);
+      background: linear-gradient(135deg, #f0c48c, #e5b175);
+    }
+    .portfolio-cta .btn.btn-ghost{
+      background: rgba(255,255,255,0.65);
+    }
+    .btn-subtext{
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(43,33,23,0.85);
+    }
+
+  </style>
+<style>
+/* HERO (reference-aligned) */
+.hero.hero-ref { margin-top: 10px; margin-bottom: 44px; }
+.hero-ref .hero-split{
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+  min-height: 520px;
+  background: #000;
+}
+.hero-ref .hero-left{ position: relative; }
+.hero-ref .hero-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.02);
+}
+.hero-ref .hero-left::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(circle at 25% 40%, rgba(0,0,0,0.08), rgba(0,0,0,0.42) 72%);
+  pointer-events:none;
+}
+
+.hero-ref .hero-right{
+  position: relative;
+  background: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.10), rgba(0,0,0,0.0) 42%),
+              linear-gradient(180deg, rgba(0,0,0,0.80), rgba(0,0,0,0.92));
+  color: rgba(255,255,255,0.92);
+}
+.hero-ref .hero-right-inner{
+  height: 100%;
+  padding: 56px 56px 44px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+.hero-ref .hero-eyebrow{
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(255,255,255,0.70);
+}
+.hero-ref .hero-title-ref{
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.05;
+  margin: 0;
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+}
+.hero-ref .hero-accent{
+  color: rgba(240,196,140,0.95);
+}
+.hero-ref .hero-subtitle-ref{
+  margin: 0;
+  max-width: 40ch;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.78);
+}
+.hero-ref .hero-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+.hero-ref .hero-badge{
+  border: 1px solid rgba(240,196,140,0.55);
+  color: rgba(240,196,140,0.92);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1;
+  background: rgba(0,0,0,0.20);
+  backdrop-filter: blur(6px);
+}
+.hero-ref .hero-ctas{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+.hero-ref .btn{ text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap: 8px; }
+.hero-ref .btn-primary-ref{
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.0);
+  font-weight: 700;
+  color: #2b2117;
+  background: linear-gradient(135deg, #f0c48c, #e5b175);
+  box-shadow: 0 14px 34px rgba(206, 158, 101, 0.55);
+}
+.hero-ref .btn-primary-ref:hover{ transform: translateY(-1px); box-shadow: 0 18px 42px rgba(206, 158, 101, 0.65); }
+.hero-ref .btn-ghost-ref{
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,196,140,0.55);
+  color: rgba(240,196,140,0.92);
+  background: rgba(0,0,0,0.15);
+}
+.hero-ref .btn-ghost-ref:hover{ background: rgba(0,0,0,0.30); transform: translateY(-1px); }
+.hero-ref .hero-note-ref{
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.70);
+  max-width: 56ch;
+}
+
+/* Responsive */
+@media (max-width: 940px){
+  .hero-ref .hero-split{ grid-template-columns: 1fr; min-height: 0; }
+  .hero-ref .hero-left{ min-height: 320px; }
+  .hero-ref .hero-right-inner{ padding: 40px 22px 34px 22px; }
+  .hero-ref .hero-subtitle-ref{ max-width: 60ch; }
+}
+</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Earthling Homes",
+    "url": "https://earthlinghomes.in/",
+    "sameAs": [
+      "https://earthling-homes-44yf7w8.gamma.site"
+    ],
+    "description": "Sustainable architecture, landscape design, and mindful interiors — calm, buildable spaces rooted in nature."
+  }
+  </script>
+
+</head>
+<body>
+
+<div class="page-shell">
+  <header>
+    <div class="nav-wrap">
+      <!-- HTML-ONLY LOGO -->
+      <div class="logo">
+        <div class="logo-main">Earthling Homes</div>
+        <div class="logo-tagline">Designs that breathe</div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+  <a href="#home">Home</a>
+
+  <div class="nav-item has-dropdown">
+    <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+      Services
+      <span aria-hidden="true" class="caret">▾</span>
+    </button>
+    <div class="dropdown-menu" role="menu" aria-label="Services submenu">
+      <a role="menuitem" href="#services">All Services</a>
+      <a role="menuitem" href="#services" data-scroll="interiors">Interiors</a>
+      <a role="menuitem" href="#services" data-scroll="project-management">Project Management</a>
+      <a role="menuitem" href="#services" data-scroll="urban-design">Urban Design</a>
+      <a role="menuitem" href="#services" data-scroll="landscape-design">Landscape Design</a>
+    </div>
+  </div>
+
+  <a href="#portfolio">Portfolio</a>
+  <a href="#materials">Material Philosophy</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Contact</a>
+
+  <!-- Top Get Quote button opens modal -->
+  <button type="button" id="open-quote-modal" class="nav-cta">Get Quote</button>
+</nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero hero-ref" aria-labelledby="hero-heading">
+  <div class="hero-split">
+    <div class="hero-left" aria-hidden="true">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
+        alt="Green earth themed house with courtyard, plants, and natural materials"
+        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1800&q=80';"
+      />
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-right-inner">
+        <div class="hero-eyebrow">SUSTAINABLE HOMES FOR MODERN EARTHLINGS</div>
+
+        <h1 id="hero-heading" class="hero-title-ref">
+          Let's design your <span class="hero-accent">friendly nest.</span>
+        </h1>
+
+        <p class="hero-subtitle-ref">
+          Earthling Homes blends architecture, interiors, and urban thinking to create calm, timeless spaces in nature—finely tuned to everyday life.
+        </p>
+
+        <div class="hero-badges" role="list" aria-label="Design principles">
+          <span class="hero-badge" role="listitem">Low-impact materials</span>
+          <span class="hero-badge" role="listitem">Daylight-first design</span>
+          <span class="hero-badge" role="listitem">Human-centred layouts</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary-ref" href="#contact">Talk to us about your home <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost-ref" href="#portfolio">Explore our portfolio</a>
+        </div>
+
+        <div class="hero-note-ref">
+          Typical concept discussions are completed in <strong>3–5 working days</strong>, tailored to your plot in <strong>Bengaluru or beyond</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="section-label">What we do</div>
+      <h2 id="services-heading" class="section-title">End-to-end support for your dream build.</h2>
+      <p class="section-subtitle">
+        From initial concept sketches to move-in day, Earthling Homes coordinates:
+        <br/>• Architecture Planning
+        <br/>• Interior Design
+        <br/>• Project Execution
+        <br/><span style="display:inline-block;margin-top:6px;">So you can have a smooth, stress-free journey.</span>
+      </p>
+
+      <div class="services-grid">
+        <!-- SERVICE 1 -->
+        <article class="service-card" data-service="architecture" id="architecture-planning">
+          <div class="service-icon" aria-hidden="true">📐</div>
+          <h3 class="service-title">Architecture Planning</h3>
+          <p class="service-copy">
+            Site study, concept planning, and build-ready drawings tailored to your plot, bylaws, and lifestyle.
+          </p>
+          <div class="service-details">
+            <ul>
+              <li>Site study, zoning and setback analysis.</li>
+              <li>Concept layouts and area statements for each floor.</li>
+              <li>Orientation planning: sun, wind and ventilation mapping.</li>
+              <li>Coordination with structural and MEP consultants.</li>
+              <li>Construction-ready drawing set for execution.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SERVICE 2 -->
+        <article class="service-card" data-service="interiors" id="interiors">
+          <div class="service-icon" aria-hidden="true">🏠</div>
+          <h3 class="service-title">Interiors</h3>
+          <p class="service-copy">
+            Furniture layouts, lighting and finish palettes designed for real life — calm, functional, and timeless.
+          </p>
+          <div class="service-details">
+            <ul>
+              <li>Room-wise layouts, storage planning and circulation.</li>
+              <li>Material, finishes and color palette curation.</li>
+              <li>Lighting plan: ambient, task and mood layers.</li>
+              <li>Custom furniture and detailing support.</li>
+              <li>On-site design reviews during execution.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SERVICE 3 -->
+        <article class="service-card" data-service="project-management" id="project-management">
+          <div class="service-icon" aria-hidden="true">📊</div>
+          <h3 class="service-title">Project Management</h3>
+          <p class="service-copy">
+            End-to-end coordination across vendors, timeline, and on-site quality checks — from concept to handover day.
+          </p>
+          <div class="service-details">
+            <ul>
+              <li>Vendor coordination and scope alignment.</li>
+              <li>Milestone planning and progress tracking.</li>
+              <li>Site visits with updates, risks and next steps.</li>
+              <li>Quality checks against drawings and specifications.</li>
+              <li>Handover support with snag-list and final review.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SERVICE 4 -->
+        <article class="service-card" data-service="urban-design" id="urban-design">
+          <div class="service-icon" aria-hidden="true">🏙️</div>
+          <h3 class="service-title">Urban Design</h3>
+          <p class="service-copy">
+            Planning that respects context — circulation, streetscape, and livable outdoor edges that work with your neighborhood.
+          </p>
+          <div class="service-details">
+            <ul>
+              <li>Site circulation and access planning.</li>
+              <li>Context-aware massing and frontage studies.</li>
+              <li>Privacy, shade and micro-climate considerations.</li>
+              <li>Integration with landscape and outdoor living zones.</li>
+              <li>Design reviews aligned to local requirements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SERVICE 5 -->
+        <article class="service-card" data-service="landscape-design" id="landscape-design">
+          <div class="service-icon" aria-hidden="true">🌿</div>
+          <h3 class="service-title">Landscape Design</h3>
+          <p class="service-copy">
+            Terraces, courtyards, and green pockets designed for shade, calm, and low-maintenance beauty across seasons.
+          </p>
+          <div class="service-details">
+            <ul>
+              <li>Courtyard, balcony and terrace planning.</li>
+              <li>Planting palettes tuned to light and maintenance.</li>
+              <li>Outdoor materials, drainage and rainwater flow.</li>
+              <li>Soft lighting for outdoor ambience and safety.</li>
+              <li>Coordination with overall architecture language.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="section-label">Portfolio</div>
+      <h2 id="portfolio-heading" class="section-title">Recent work and concept studies.</h2>
+      <p class="section-subtitle">
+        A few snapshots of our approach — warm, grounded, and buildable. Share your plot details and we’ll tailor
+        concepts specifically to your site within 3–5 working days.
+      </p>
+
+      
+      <div class="portfolio-cta" role="group" aria-label="Portfolio links">
+        <a class="btn btn-primary" href="https://earthling-homes-44yf7w8.gamma.site" target="_blank" rel="noopener noreferrer">
+          View interactive portfolio
+          <span class="btn-subtext">Concept decks, before/after moodboards, and build-ready references</span>
+        </a>
+        <a class="btn btn-ghost" href="#contact" data-scroll="contact">
+          Request a site-specific concept
+          <span class="btn-subtext">Share plot details — get a tailored concept in 3–5 working days</span>
+        </a>
+      </div>
+<div class="blog-grid">
+        <!-- Featured portfolio card -->
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80"
+                 alt="Warm, earth-toned living space" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-tag">Architecture + Interiors</div>
+            <div class="blog-title">Courtyard home concept: light-first planning with calm interiors.</div>
+            <p class="blog-excerpt">
+              A concept study that balances airflow, daylight and privacy — with interiors that stay honest in materials
+              and easy to maintain.
+            </p>
+            <div class="blog-meta">Concept study · Bengaluru</div>
+          </div>
+        </article>
+
+        <!-- Portfolio list -->
+        <div class="blog-list">
+          <article class="blog-list-card">
+            <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=600&q=80"
+                 alt="Building facade with warm evening light" />
+            <div>
+              <div class="blog-list-title">Compact plot planning: maximizing light and usable storage.</div>
+              <div class="blog-list-excerpt">
+                How we plan circulation, staircases, and room sizes so the home feels open without wasting area.
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-list-card">
+            <img src="https://images.unsplash.com/photo-1519710884009-2f97e3608b89?auto=format&fit=crop&w=600&q=80"
+                 alt="Close-up of natural material palette" />
+            <div>
+              <div class="blog-list-title">Material palette: textures that age with grace.</div>
+              <div class="blog-list-excerpt">
+                Stone, wood, lime and textured paints — Materials that look better even after 20 years.
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-list-card">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80"
+                 alt="Cozy dining corner with soft lighting" />
+            <div>
+              <div class="blog-list-title">Quiet corners: designing for the way you actually live.</div>
+              <div class="blog-list-excerpt">
+                Reading nooks, work-from-home zones and dining corners — planned for comfort and calm.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAL PHILOSOPHY -->
+    <section id="materials" aria-labelledby="materials-heading" style="margin-top:36px;">
+      <div class="section-label">Material Philosophy</div>
+      <h2 id="materials-heading" class="section-title">Choosing materials that age with grace.</h2>
+      <p class="section-subtitle" style="max-width:720px;">
+        We believe in choosing materials that age with grace, not stress.
+        <strong>Materials that look better even after 20 years.</strong>
+      </p>
+    </section>
+
+    <!-- FOUNDERS -->
+    <section class="founders-words" aria-labelledby="founders-heading">
+      <h2 id="founders-heading" class="section-title" style="margin-bottom:6px;">Words from the founders.</h2>
+      <p class="founders-quote">
+        “Earthling Homes began with a simple question: <em>what would a home look like if we truly designed around
+        the planet and the people inside it?</em> Every line we draw is a quiet promise — that your space will feel
+        lighter to live in, kinder to maintain and more honest in how it ages with time.”
+      </p>
+      <p class="founders-quote">
+        “For us, architecture is not a showpiece; it is a daily companion. We obsess over airflow, light angles,
+        storage, noise, and the invisible details that make a home feel effortless on a Monday morning and magical
+        on a slow Sunday evening.”
+      </p>
+      <div class="founders-meta">
+        Co-founders, Earthling Homes · Cunningham Road, Bengaluru
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" aria-labelledby="location-heading">
+      <div class="section-label">Location</div>
+      <h2 id="location-heading" class="section-title">Visit our studio.</h2>
+
+      <div class="map-container">
+        <div class="map-header">
+          <div>
+            <div class="map-eyebrow">Studio location</div>
+            <div class="map-label">Earthling Homes · Cunningham Road, Bengaluru</div>
+          </div>
+          <div style="font-size:11px;">
+            Open Google Maps for directions
+          </div>
+        </div>
+        <iframe
+          class="map-frame"
+          title="Earthling Homes office location on Cunningham Road Bengaluru"
+          src="https://www.google.com/maps?q=18/5%2C%20Cunningham%20Road%2C%20Vasanth%20Nagar%2C%20Bengaluru%20560001&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-label">Contact</div>
+      <h2 id="contact-heading" class="section-title">Say hello to the studio.</h2>
+      <p class="section-subtitle">
+        Ready to explore an idea, or want a second opinion on your plans?
+        Share your plot details and we’ll respond with next steps.
+      </p>
+
+      <div style="margin-top:10px; font-size:14px; color:var(--text-soft); line-height:1.7;">
+        <div><strong>Email:</strong> <a href="mailto:support@earthlinghomes.in" style="color:#8b7359; text-decoration:none;">support@earthlinghomes.in</a></div>
+        <div style="margin-top:8px;"><strong>Office:</strong> Ground Floor, Executive Chambers<br/>
+          18/5, Cunningham Road, Vasanth Nagar<br/>
+          Bengaluru, Karnataka – 560001
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Earthling Homes. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#materials">Material Philosophy</a>
+        <a href="#location">Location</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- QUOTE MODAL -->
+<div id="quote-modal" class="modal-backdrop" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title">
+    <div class="modal-header">
+      <div class="modal-title" id="quote-modal-title">Request a quick quote</div>
+      <button type="button" class="modal-close" id="close-quote-modal" aria-label="Close quote form">×</button>
+    </div>
+    <p class="modal-subtitle">
+      Share a few basic details and we’ll get back with a rough budget and timeline for your home.
+    </p>
+    <form class="modal-form" id="quote-form" action="https://formspree.io/f/xreeggjd" method="POST">
+      <div class="field">
+        <label for="modal-name">Name</label>
+        <input id="modal-name" name="name" type="text" placeholder="Your full name" required>
+      </div>
+      <div class="field">
+        <label for="modal-phone">Phone number</label>
+        <input id="modal-phone" name="phone" type="tel" placeholder="Your phone number" required>
+      </div>
+      <div class="field">
+        <label for="modal-place">Place / City</label>
+        <input id="modal-place" name="place" type="text" placeholder="e.g. Vasanth Nagar, Bengaluru">
+      </div>
+      <div class="field">
+        <label for="modal-note">Note</label>
+        <textarea id="modal-note" name="note" placeholder="Tell us about your plot, floors, or ideas you already have."></textarea>
+      </div>
+
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <p id="quote-status" class="form-status" aria-live="polite" style="display:none; margin: 12px 0 0;"></p>
+
+      <div class="modal-actions">
+        <div class="modal-note">
+          We don’t spam or share your details. A designer will reach out personally.
+        </div>
+        <button type="button" class="btn-secondary" id="cancel-quote">Cancel</button>
+        <button type="submit" class="btn-primary" id="quote-submit">Send quote request</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  // === CONFIG: replace this with your real Google Apps Script Web App URL ===
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec";
+  // ========================================================================
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // WhatsApp Chat
+  (function() {
+    const whatsappBtn = document.getElementById('whatsapp-chat-btn');
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener('click', function() {
+        const numberWithCountry = '915029103845'; // 91 + 5029103845
+        const message = 'Hi Earthling Homes, I would like to discuss my home project.';
+        const url = 'https://wa.me/' + numberWithCountry + '?text=' + encodeURIComponent(message);
+        window.open(url, '_blank');
+      });
+    }
+  })();
+
+  // Quote Modal Logic + Formspree backend
+  (function() {
+    const openBtn = document.getElementById('open-quote-modal');
+    const modal = document.getElementById('quote-modal');
+    const closeBtn = document.getElementById('close-quote-modal');
+    const cancelBtn = document.getElementById('cancel-quote');
+    const form = document.getElementById('quote-form');
+    const statusEl = document.getElementById('quote-status');
+    const submitBtn = document.getElementById('quote-submit');
+
+    function openModal() {
+      if (!modal) return;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const nameInput = document.getElementById('modal-name');
+      if (nameInput) nameInput.focus();
+      if (statusEl) {
+        statusEl.style.display = 'none';
+        statusEl.textContent = '';
+      }
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+      });
+    }
+
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        if (statusEl) {
+          statusEl.style.display = 'block';
+          statusEl.textContent = 'Submitting...';
+        }
+        if (submitBtn) submitBtn.disabled = true;
+
+        try {
+          const formData = new FormData(form);
+
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.reset();
+            if (statusEl) {
+              statusEl.textContent = "Thanks, we’ll contact you.";
+            }
+          } else {
+            if (statusEl) {
+              statusEl.textContent = "Something went wrong. Please try again or email us at support@earthlinghomes.in";
+            }
+          }
+        } catch (err) {
+          console.error('Quote submit error:', err);
+          if (statusEl) {
+            statusEl.textContent = "Network error. Please try again or email us at support@earthlinghomes.in";
+          }
+        } finally {
+          if (submitBtn) submitBtn.disabled = false;
+        }
+      });
+    }
+  })();
+
+
+// Services dropdown (mobile-friendly) + deep-scroll
+(function() {
+  const dropdown = document.querySelector('.has-dropdown');
+  const trigger = document.querySelector('.dropdown-trigger');
+  const menuLinks = document.querySelectorAll('.dropdown-menu a[data-scroll]');
+
+  function closeDropdown() {
+    if (!dropdown || !trigger) return;
+    dropdown.classList.remove('dropdown-open');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  function openDropdown() {
+    if (!dropdown || !trigger) return;
+    dropdown.classList.add('dropdown-open');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  if (trigger && dropdown) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('dropdown-open');
+      if (isOpen) closeDropdown();
+      else openDropdown();
+    });
+
+    document.addEventListener('click', function() {
+      closeDropdown();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  }
+
+  // Jump to a specific service card and expand it
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = link.getAttribute('data-scroll');
+      if (!targetId) return;
+      const card = document.getElementById(targetId);
+      if (!card) return;
+
+      // Navigate to Services section first
+      window.location.hash = '#services';
+
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Expand the selected card
+        const cards = document.querySelectorAll('.service-card');
+        cards.forEach(c => c.classList.remove('expanded'));
+        card.classList.add('expanded');
+      }, 60);
+
+      closeDropdown();
+    });
+  });
+})();
+
+  // Service cards expand/collapse
+  (function() {
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        const isExpanded = card.classList.contains('expanded');
+        cards.forEach(c => c.classList.remove('expanded'));
+        if (!isExpanded) {
+          card.classList.add('expanded');
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
+
